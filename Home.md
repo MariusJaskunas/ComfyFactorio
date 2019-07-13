@@ -20,5 +20,5 @@ Everyone can contribute to make the Comfy scenario better!
 
 ### Getting help
 
-- If you are experiencing issues or errors when running Comfy maps, please [open an issue](https://github.com/Gerkiz/ComfyFactorio/issues/new).
+- If you are experiencing issues or errors when running Comfy maps, please [open an issue](https://github.com/M3wM3w/ComfyFactorio/issues/new).
 - We're also live at our [discord](https://getcomfy.eu/discord). Don't hesitate to reach out!
