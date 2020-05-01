@@ -11,7 +11,7 @@ Everyone can contribute to make the Comfy scenario better!
 
 2. Thereafter, unzip the folder to your desktop and move the extracted folder to: ``%appdata%\Factorio\Scenarios\``.
 
-3. After that is done, open ``control.lua`` which can be found inside the ``%appdata%\Factorio\Scenarios\'extracted-map'\config.lua``. 
+3. After that is done, open ``control.lua`` which can be found inside the ``%appdata%\Factorio\Scenarios\'extracted-map'\control.lua``. 
 4. Find the line ``---- enable maps here ----`` and remove the ``--`` in front of the map that you want to activate. Make sure only 1 map is activated.
 5. Save the file.
 6. Open Factorio and press ``>> Play >> Scenarios``
