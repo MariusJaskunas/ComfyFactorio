@@ -5,8 +5,8 @@ Everyone can contribute to make the Comfy scenario better!
 
 ## Using Comfy maps
 
-1. Download the latest release that we have published: <a href="https://github.com/M3wM3w/ComfyFactorio/tags">
-    <img src="https://img.shields.io/github/tag/M3wM3w/ComfyFactorio.svg?label=Release" alt="Release">
+1. Download the latest release that we have published: <a href="https://github.com/M3wM3w/ComfyFactorio/archive/master.zip">
+    <img src="https://img.shields.io/github/tag/M3wM3w/ComfyFactorio.svg?label=Release" alt="Download">
   </a>
 
 2. Thereafter, unzip the folder to your desktop and move the extracted folder to: ``%appdata%\Factorio\Scenarios\``.
