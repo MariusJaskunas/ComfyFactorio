@@ -68,6 +68,7 @@ end
 
 function Public.xp_reset_all_players()
 	for _, p in pairs(game.players) do
+		--- TODO: rpg_t is not defined
 		rpg_t[p.index] = nil
 	end
 	for _, p in pairs(game.connected_players) do
@@ -94,8 +95,10 @@ local function on_entity_died(event)
 	if not event.cause then return end
 	if not event.cause.valid then return end
 	if event.cause.force.index == event.entity.force.index then return end
+	--- TODO: get_cause_player is not defined
 	if not get_cause_player[event.cause.type] then return end
 
+	--- TODO: get_cause_player is not defined
 	local players = get_cause_player[event.cause.type](event.cause)
 	if not players then return end
 	if not players[1] then return end
@@ -211,8 +214,10 @@ end
 local event = require 'utils.event'
 event.on_init(on_init)
 event.add(defines.events.on_built_entity, on_built_entity)
+--- TODO: on_entity_damaged is not defined
 event.add(defines.events.on_entity_damaged, on_entity_damaged)
 event.add(defines.events.on_entity_died, on_entity_died)
+--- TODO: on_gui_click is not defined
 event.add(defines.events.on_gui_click, on_gui_click)
 event.add(defines.events.on_player_changed_position, on_player_changed_position)
 event.add(defines.events.on_player_crafted_item, on_player_crafted_item)

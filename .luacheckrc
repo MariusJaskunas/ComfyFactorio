@@ -180,7 +180,7 @@ stds.factorio_control = {
         -- @commands@:
         commands = {
             fields = {
-                "commands", "game_commands", "remove_command"
+                "commands", "game_commands", "remove_command", "add_command"
             },
             other_fields = false,
         },
@@ -218,12 +218,6 @@ stds.factorio_control = {
 
         rcon = {
             fields = {'print'}
-        },
-
-        commands = {
-            fields = {
-                'add_command'
-            }
         },
 
         rendering = {
@@ -1061,6 +1055,10 @@ stds.factorio_defines = {
                         'on_player_toggled_map_editor',
                         'on_player_tool_inventory_changed',
                         'on_player_trash_inventory_changed',
+                        'on_permission_group_added',
+                        'on_permission_group_deleted',
+                        'on_permission_group_edited',
+                        'on_permission_string_imported',
                         'on_player_unbanned',
                         'on_player_unmuted',
                         'on_player_used_capsule',

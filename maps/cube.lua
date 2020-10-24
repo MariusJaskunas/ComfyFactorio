@@ -165,5 +165,6 @@ end
 
 event.add(defines.events.on_tick, on_tick)
 event.add(defines.events.on_chunk_generated, on_chunk_generated)
+--- TODO: on_chunk_charted is not defined
 event.add(defines.events.on_chunk_charted, on_chunk_charted)
 event.add(defines.events.on_player_joined_game, on_player_joined_game)

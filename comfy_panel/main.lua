@@ -105,6 +105,7 @@ local function main_frame(player)
 
     local tab = tabbed_pane.add({type = 'tab', name = 'comfy_panel_close', caption = 'X'})
     tab.style.maximal_width = 32
+    --- TODO: Name is undefined here
     local frame = tabbed_pane.add({type = 'frame', name = name, direction = 'vertical'})
     tabbed_pane.add_tab(tab, frame)
 

@@ -61,6 +61,7 @@ local modifiers_diagonal = {
   {diagonal = {x = -1, y = -1}, connection_1 = {x = -1, y = 0}, connection_2 = {x = 0, y = -1}}
 }
 
+--- TODO: Not used
 local function pos_to_key(position)
     return tostring(position.x .. "_" .. position.y)
 end
@@ -671,6 +672,7 @@ local function process_fish_position(p, seed, tiles, entities, treasure, planet)
 end
 
 local levels = {
+  --- TODO: process_level_1_position is not defined
 	process_level_1_position,
 	process_dangerevent_position,
 	process_hedgemaze_position,
@@ -842,6 +844,7 @@ local function fish_market(surface, left_top, level, planet)
   for y = 0, 31, 1 do
     for x = 0, 31, 1 do
       local p = {x = left_top.x + x, y = left_top.y + y}
+      --- TODO: treasure is not defined
       process_level(p, seed, tiles, entities, treasure, planet)
     end
   end

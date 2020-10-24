@@ -330,6 +330,7 @@ end
 
 function Public.draw_top_toggle_button(player)
 	if player.gui.top["team_manager_toggle_button"] then player.gui.top["team_manager_toggle_button"].destroy() end
+	--- TODO: tooltip is not defined
 	local button = player.gui.top.add({type = "sprite-button", name = "team_manager_toggle_button", caption = "Team Manager", tooltip = tooltip})
 	button.style.font = "heading-2"
 	button.style.font_color = {r = 0.88, g = 0.55, b = 0.11}
@@ -593,6 +594,7 @@ local function join_gui_click(name, player)
 			global.game_lobby_active = false
 			return
 		end
+		--- TODO: math_random is not defined. Missing the import
 		player.print("Waiting for more players, " .. wait_messages[math_random(1, #wait_messages)], { r=0.98, g=0.66, b=0.22})
 		return
 	end

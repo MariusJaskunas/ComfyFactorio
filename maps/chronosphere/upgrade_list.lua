@@ -49,6 +49,7 @@ function Public.upgrades()
       enabled = true,
       message = {"chronosphere.upgrade_filter_message"},
       tooltip = {"chronosphere.upgrade_filter_tooltip", math_floor(100 * Balance.machine_pollution_transfer_from_inside_factor(Difficulty.get().difficulty_vote_value, objective.upgrades[2]))},
+      --- TODO: Linter does not really like this one. When 0 is possible?
       jump_limit = (1 + objective.upgrades[2]) * 3 or 0,
       cost = {
         item1 = {name = "coin", tt = "item-name", sprite = "item/coin", count = 5000 * Balance.upgrades_coin_cost_difficulty_scaling(difficulty)},
