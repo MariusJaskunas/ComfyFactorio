@@ -112,7 +112,7 @@ function Public.reset_table()
 end
 
 --- Gets value from table
----@param key <string>
+---@param key string
 function Public.get(key)
     if key then
         return this[key]
@@ -122,7 +122,7 @@ function Public.get(key)
 end
 
 --- Sets value to table
----@param key <string>
+---@param key string
 function Public.set(key)
     if key then
         return this[key]
@@ -143,7 +143,7 @@ function Public.toggle_debug()
 end
 
 --- Debug only - when you need to troubleshoot.
----@param str <string>
+---@param str string
 function Public.debug_log(str)
     if not this.rpg_extra.debug then
         return
@@ -152,7 +152,7 @@ function Public.debug_log(str)
 end
 
 --- Sets surface name for rpg_v2 to use
----@param name <string>
+---@param name string
 function Public.set_surface_name(name)
     if name then
         this.rpg_extra.surface_name = name
@@ -165,7 +165,7 @@ end
 
 --- Enables the bars that shows above the player character.
 --- If you disable mana but enable <enable_health_and_mana_bars> then only health will be shown
----@param value <boolean>
+---@param value boolean
 function Public.enable_health_and_mana_bars(value)
     if value then
         this.rpg_extra.enable_health_and_mana_bars = value
@@ -177,7 +177,7 @@ function Public.enable_health_and_mana_bars(value)
 end
 
 --- Enables the mana feature that allows players to spawn entities.
----@param value <boolean>
+---@param value boolean
 function Public.enable_mana(value)
     if value then
         this.rpg_extra.enable_mana = value
@@ -190,7 +190,7 @@ end
 
 --- This should only be enabled if wave_defense is enabled.
 --- It boosts the amount of xp the players get after x amount of waves.
----@param value <boolean>
+---@param value boolean
 function Public.enable_wave_defense(value)
     if value then
         this.rpg_extra.enable_wave_defense = value
@@ -202,7 +202,7 @@ function Public.enable_wave_defense(value)
 end
 
 --- Enables/disabled flame boots.
----@param value <boolean>
+---@param value boolean
 function Public.enable_flame_boots(value)
     if value then
         this.rpg_extra.enable_flame_boots = value
@@ -214,7 +214,7 @@ function Public.enable_flame_boots(value)
 end
 
 --- Enables/disabled personal tax.
----@param value <boolean>
+---@param value boolean
 function Public.personal_tax_rate(value)
     if value then
         this.rpg_extra.personal_tax_rate = value
@@ -226,7 +226,7 @@ function Public.personal_tax_rate(value)
 end
 
 --- Enables/disabled stone-path-tile creation on mined.
----@param value <boolean>
+---@param value boolean
 function Public.enable_stone_path(value)
     if value then
         this.rpg_extra.enable_stone_path = value
@@ -238,7 +238,7 @@ function Public.enable_stone_path(value)
 end
 
 --- Enables/disabled auto-allocations of skill-points.
----@param value <boolean>
+---@param value boolean
 function Public.enable_auto_allocate(value)
     if value then
         this.rpg_extra.enable_auto_allocate = value
@@ -250,7 +250,7 @@ function Public.enable_auto_allocate(value)
 end
 
 --- Enables/disabled stone-path-tile creation on mined.
----@param value <boolean>
+---@param value boolean
 function Public.enable_one_punch(value)
     if value then
         this.rpg_extra.enable_one_punch = value
@@ -262,7 +262,7 @@ function Public.enable_one_punch(value)
 end
 
 --- Enables/disabled stone-path-tile creation on mined.
----@param value <boolean>
+---@param value boolean
 function Public.enable_one_punch_globally(value)
     if value then
         this.rpg_extra.enable_one_punch_globally = value
@@ -274,7 +274,7 @@ function Public.enable_one_punch_globally(value)
 end
 
 --- Retrieves the spells table or a given spell.
----@param key <string>
+---@param key string
 function Public.get_spells(key)
     if this.rpg_spells[key] then
         return this.rpg_spells[key]
@@ -284,7 +284,7 @@ function Public.get_spells(key)
 end
 
 --- Disables a spell.
----@param key <string/table>
+---@param key string/table
 -- Table would look like:
 -- Public.disable_spell({1, 2, 3, 4, 5, 6, 7, 8})
 function Public.disable_spell(key)
@@ -303,7 +303,7 @@ function Public.clear_spell_table()
 end
 
 --- Adds a spell to the rpg_spells
----@param tbl <table>
+---@param tbl table
 function Public.set_new_spell(tbl)
     if tbl then
         if not tbl.name then

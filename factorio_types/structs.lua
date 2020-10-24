@@ -1,0 +1,2 @@
+--- @class GameViewSettings
+--- @class TileProperties
