@@ -105,7 +105,9 @@ local function upload_data()
 end
 
 --- Prints out game.tick to real hour/minute
----@param int
+---@param ticks integer
+---@param h integer
+---@param m integer
 function Public.format_time(ticks, h, m)
     local seconds = ticks / 60
     local minutes = math.floor((seconds) / 60)

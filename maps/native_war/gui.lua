@@ -53,6 +53,7 @@ local function create_new_gui_for_market(player,market)
 	for _, nb in pairs(Settings.nb_of_waves) do
 		local wave_nb = nb
 		local text_wave =""
+		--- TODO: wave_nd is not defined
 		if wave_nd == 1 then
 			text_wave = wave_nb.." wave"
 		else

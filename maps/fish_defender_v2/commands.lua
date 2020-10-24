@@ -107,6 +107,7 @@ commands.add_command(
             if player ~= nil then
                 p = player.print
                 if not player.admin then
+                    --- TODO: Color is not defined
                     p("[ERROR] You're not admin!", Color.fail)
                     return
                 end
@@ -135,6 +136,7 @@ commands.add_command(
             if player ~= nil then
                 p = player.print
                 if not player.admin then
+                    --- TODO: Color is not defined
                     p("[ERROR] You're not admin!", Color.fail)
                     return
                 end

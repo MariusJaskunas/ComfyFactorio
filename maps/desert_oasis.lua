@@ -36,7 +36,6 @@ local save_tiles = {
 	["grass-1"] = true,
 	["grass-2"] = true,
 	["grass-3"] = true,
-	["water"] = true,
 	["deepwater"] = true,
 }
 

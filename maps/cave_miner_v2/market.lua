@@ -26,6 +26,7 @@ local special_slots = {
 			for _, item_stack in pairs(item_stacks) do table.insert(price, {name = item_stack.name, amount = item_stack.count}) end	
 			market.add_market_item({price = price, offer = {type = 'nothing', effect_description = 'Upgrade pickaxe tier to: ' .. pickaxe_tiers[tier]}})		
 		else
+			--- TODO: Price is not defined here.
 			market.add_market_item({price = price, offer = {type = 'nothing', effect_description = 'Maximum pickaxe upgrade reached!'}})		
 		end
 	end,

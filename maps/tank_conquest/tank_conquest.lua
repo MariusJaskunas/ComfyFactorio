@@ -1705,7 +1705,7 @@
         end
 
         for _, p in pairs( game.connected_players ) do
-
+            --- TODO: driver is not defined
             if p.force.name ~= player.force.name and p.name ~= event.cause.player.name and p.name ~= driver.player.name then
 
                 p.print( player_death_message, table_of_colors.damage )

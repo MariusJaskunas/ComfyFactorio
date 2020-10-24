@@ -80,6 +80,7 @@ end
 
 function Public.loot_crate(surface, position, multiplier, slots, container_name)
 	local d = math_sqrt(position.x ^ 2 + position.y ^ 2)
+	--- TODO: loot_blacklist does not seem to be defined
 	local item_stacks = LootRaffle.roll(d * multiplier, slots, loot_blacklist)
 	local container = surface.create_entity({name = container_name, position = position, force = "neutral"})
 	for _, item_stack in pairs(item_stacks) do container.insert(item_stack) end

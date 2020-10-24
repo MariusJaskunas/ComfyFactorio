@@ -327,6 +327,7 @@ Event.on_init(on_init)
 Event.add(defines.events.on_tick, on_tick)
 Event.add(defines.events.on_research_finished, on_research_finished)
 Event.add(defines.events.on_entity_died, on_entity_died)
+--- TODO: on_entity_spawned is not defined
 Event.add(defines.events.on_entity_spawned, on_entity_spawned)
 Event.add(defines.events.on_player_joined_game, on_player_joined_game)
 Event.add(defines.events.on_chunk_generated, on_chunk_generated)

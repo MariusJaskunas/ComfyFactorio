@@ -542,6 +542,7 @@ local function on_init()
 	Init.settings()
 	Init.surface()
 	Init.forces()
+	--- method is not defined
 	kill_entities_combat_zone(surface)
 end
 

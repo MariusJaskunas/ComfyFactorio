@@ -11,6 +11,7 @@ local function create_projectile(surface, position, target, name)
 	surface.create_entity({	
 		name = name,
 		position = position,
+		--- TODO: force is not defined
 		force = force,
 		source = position,
 		target = target,

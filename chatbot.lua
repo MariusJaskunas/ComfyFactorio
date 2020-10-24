@@ -110,6 +110,7 @@ commands.add_command(
                     return
                 end
             else
+                --- TODO: Verify that this is needed
                 p = log
             end
 

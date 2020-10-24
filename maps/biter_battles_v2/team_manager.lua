@@ -96,6 +96,7 @@ end
 
 function Public.draw_top_toggle_button(player)
 	if player.gui.top["team_manager_toggle_button"] then player.gui.top["team_manager_toggle_button"].destroy() end	
+	--- TODO: tooltip does not seem to be defined
 	local button = player.gui.top.add({type = "sprite-button", name = "team_manager_toggle_button", caption = "Team Manager", tooltip = tooltip})
 	button.style.font = "heading-2"
 	button.style.font_color = {r = 0.88, g = 0.55, b = 0.11}

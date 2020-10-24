@@ -1,0 +1,24 @@
+{
+    "Lua.diagnostics.globals": [
+        "game",
+        "defines",
+        "rendering",
+        "commands",
+        "global",
+        "surface",
+        "biter_battles_ores",
+        "script",
+        "log",
+        "frame_sciencelogs",
+        "summary_panel_table2",
+        "summary_panel_table3",
+        "comfy_panel_tabs",
+        "create_dump_chest",
+        "table_size",
+        "serpent",
+        "util",
+        "remote",
+        "loadstring",
+        "_CHEATS"
+    ]
+}
